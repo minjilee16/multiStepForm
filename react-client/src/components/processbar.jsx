@@ -14,19 +14,14 @@ class ProcessBar extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-    // finished: false,
-    stepIndex: 0
+      stepIndex: 0
     };
   }
-  
-
 
 
   render() {
-
-    return (
-      <div style={{width: '100%', maxWidth: 700, margin: 'auto'}}>
-        <Stepper activeStep={this.state.stepIndex}>
+    let processbar = <div style={{width: '100%', maxWidth: 700, margin: '2em auto', padding: '3em'}}>
+        <Stepper activeStep={this.props.stepIndex}>
           <Step>
             <StepLabel>ACCOUNT SETUP</StepLabel>
           </Step>
@@ -38,6 +33,8 @@ class ProcessBar extends React.Component {
           </Step>
         </Stepper>
       </div>
+    return (
+      processbar
     );
   }
 }
