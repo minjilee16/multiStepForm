@@ -22,14 +22,14 @@ class ProcessBar extends React.Component {
   render() {
     let processbar = <div style={{width: '100%', maxWidth: 700, margin: '2em auto', padding: '3em'}}>
         <Stepper activeStep={this.props.stepIndex}>
-          <Step>
-            <StepLabel>ACCOUNT SETUP</StepLabel>
+          <Step >
+            <StepLabel style={{color: 'white'}} >ACCOUNT SETUP</StepLabel>
           </Step>
           <Step>
-            <StepLabel>SOCIAL PROFILES</StepLabel>
+            <StepLabel style={{color: 'white'}}>SOCIAL PROFILES</StepLabel>
           </Step>
           <Step>
-            <StepLabel>PERSONAL DETAILS</StepLabel>
+            <StepLabel style={{color: 'white'}}>PERSONAL DETAILS</StepLabel>
           </Step>
         </Stepper>
       </div>
